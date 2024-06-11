@@ -7,7 +7,6 @@ describe('App', () => {
     render(<App />);
 
     expect(screen.getByText('Counter')).toBeInTheDocument();
-
     expect(screen.getByText('increment')).toBeEnabled();
     expect(screen.getByText('reduce')).toBeEnabled();
   });
