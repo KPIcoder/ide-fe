@@ -8,8 +8,11 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "test": "vitest",
-    "test:related": "vitest related --run",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "format:check": "prettier ./src --check",
+    "format:fix": "prettier ./src --write",
+    "test": "vitest run",
+    "test:dev": "vitest",
     "prepare": "husky"
   },
   "engines": {
